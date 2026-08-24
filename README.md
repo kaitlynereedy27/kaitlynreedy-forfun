@@ -1,0 +1,1 @@
+Fun little study website that I had the idea for while taking a web dev class! The idea is that the website's style changes according to the local weather. Added a few basic things I thought were fun.
