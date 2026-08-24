@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kaitlyn's Aesthetic Study Site</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="playlist" class="card">
+            <h2>Playlist</h2>
+            <div id="mood-selector">
+                <input aria-label="Link your own (Spotify) playlist here!" type="text" id="playlink" name="playlink" value="Link your own (Spotify) playlist here!">
+                <button id="link-btn">Submit</button>
+            </div>
+            <iframe title="playlist-placeholder" id="playlist-placeholder" data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/3AycYlV02HCBcN9YeLeKUB" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div id="timer" class="card">
+            <h2>Pomodoro Timer</h2>
+            <iframe title="p-timer" id="p-timer" src="https://flocus.com/minimalist-pomodoro-timer/?utm_source=gridblog-post&utm_medium=blog&utm_campaign=notion-pomodoro-widgets&utm_content=link"></iframe>
+        </div>
+        <div id="todo" class="card">
+            <h2>To-Do List</h2>
+            <div id="tdip">
+                <input aria-label="todo" type="text" id="list-input">
+                <button id="tdl-btn">Add to To-Do List</button>
+            </div>
+            <ul id="tdl-list"></ul>
+        </div>
+        
+    <script src="js/app.js"></script>
+    </body>
+</html>

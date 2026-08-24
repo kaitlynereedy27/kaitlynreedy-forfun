@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 500px));
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 10px;
+
+    background-image: url("/assets/clearday.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: #6b803a;
+}
+
+.card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 25px;
+    padding-top: 10px;
+
+    border: 3px solid;
+    border-radius: 20px;
+
+    margin-top: 30px;
+
+    background-color: #fefbf9cc;
+}
+
+#playlist {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#timer {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#todo {
+    grid-row: 2;
+    justify-self: center;
+    max-width: 500px;
+}
+
+#playlist-placeholder {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin-top: 17px;
+    border: 0;
+}
+
+#p-timer {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+#mood-selector {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3px;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6b803a;
+}
+
+#playlist-placeholder {
+    margin-top: 17px;
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+
+
+#tdip{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 5px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 5px;
+    width: 95%;
+    align-items: center;
+    justify-self: center;
+    justify-items: stretch;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+    border-bottom: 2px solid;
+    border-radius: 15px;
+}
+
+body.clearday {
+    background-image: url("/assets/clearday.jpg");
+    color: #6b803a;
+}
+
+body.clearday .card {
+    background-color: #fefbf9cc;
+}
+
+button.clearday {
+    color:#6b803a;
+}
+
+body.clearevening {
+    background-image: url("/assets/clearevening.jpg");
+    color: #555032;
+}
+
+body.clearevening .card {
+    background-color: #f3bc69cc;
+}
+
+button.clearevening {
+    color: #555032;
+}
+
+body.clearnight {
+    background-image: url("/assets/clearnight.jpg");
+    color: #fffeffcc;
+}
+
+body.clearnight .card {
+    background-color: #2b385ecc;
+}
+
+body.cloudday {
+    background-image: url("/assets/cloudday.jpg");
+    color: #373b32;
+}
+
+body.cloudday .card {
+    background-color: #b7b4cdcc;
+}
+
+button.cloudday {
+    color: #373b32;
+}
+
+body.cloudevening {
+    background-image: url("/assets/cloudevening.jpg");
+    color: #2b393b;
+}
+
+body.cloudevening .card {
+    background-color: #8c97b8cc;
+}
+
+button.cloudevening {
+    color: #2b393b;
+}
+
+body.cloudnight {
+    background-image: url("/assets/cloudnight.jpg");
+    color: #0c0b06;
+}
+
+body.cloudnight .card {
+    background-color: #848889cc;
+}
+
+button.cloudnight {
+    color: #0c0b06;
+}
+
+body.rainday {
+    background-image: url("/assets/rainday.jpg");
+    color: #485334;
+}
+
+body.rainday .card {
+    background-color: #d2d6d3cc;
+}
+
+button.rainday {
+    color: #485334;
+}
+
+body.rainevening {
+    background-image: url("/assets/rainevening.jpg");
+    color: #1e1518;
+}
+
+body.rainevening .card {
+    background-color: #858b99cc;
+}
+
+button.rainevening {
+    color: #1e1518;
+}
+
+body.rainnight {
+    background-image: url("/assets/rainnight.jpg");
+    color: #f3f3f0;
+}
+
+body.rainnight .card {
+    background-color: #364566;
+}
+
+button.rainnight {
+    color: #f3f3f0;
+}
+
+body.snowday {
+    background-image: url("/assets/snowday.jpg");
+    color: #ffffff;
+}
+
+body.snowday .card {
+    background-color: #6986a9cc;
+}
+
+button.snowday {
+    color: #ffffff;
+}
+
+body.snowevening {
+    background-image: url("/assets/snowevening.jpg");
+    color: #e7e7e6;
+}
+
+body.snowevening .card {
+    background-color: #606072cc;
+}
+
+button.snowevening {
+    color: #e7e7e6;
+}
+
+body.snownight {
+    background-image: url("/assets/snownight.jpg");
+    color: #e7e7e6;
+}
+
+body.snownight .card {
+    background-color: #58688ecc;
+}
+
+button.snownight {
+    color: #f9e6b0;
+}
