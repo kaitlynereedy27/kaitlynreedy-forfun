@@ -281,7 +281,7 @@ document.getElementById('export').addEventListener('click', function(){
     URL.revokeObjectURL(fileUrl);
 })
 
-var motivs =["todayimake.jpg", "academicmisandry.jpg", "clippy.jpg","crazy.jpg","adawg.jpg","ellewoods.jpg","over.jpg","soooopy.jpg","snoop.jpg"];
+var motivs =["todayimake.jpg", "academicmisandry.jpg", "clippy.jpg","crazy.jpg","dawg.jpg","ellewoods.jpg","over.jpg","soooopy.jpg","snoop.jpg"];
 var currentIndex = 0;
 
 function updateDisplay(){
