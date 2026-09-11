@@ -1,71 +1,103 @@
-* {
-    box-sizing: border-box;
-}
-
-
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 500px));
-    grid-template-rows: auto auto;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
     align-items: stretch;
-
-    gap: 10px;
-
+    gap: 15px;
     background-image: url("/assets/clearday.jpg");
     background-size: cover;
     background-position: center;
-
     color: #6b803a;
+    max-width: 90%;
+    place-self: center;
 }
 
 .card {
     width: 100%;
-    min-width: 0;
-
+    justify-self: stretch;
     padding: 25px;
     padding-top: 10px;
-
     border: 3px solid;
     border-radius: 20px;
-
-    margin-top: 30px;
-
     background-color: #fefbf9cc;
+
+    box-sizing: border-box;
 }
 
-#playlist {
+#day {
     grid-column: 1;
-    grid-row: 1;
+}
+
+#notes {
+    grid-column: span 3;
+    grid-row: span 2;
+    min-height: 350px;
+    
+}
+
+#eugh{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#motivation {
+    width: 100%;
+}
+
+#export{
+    max-height: min-content;
+    max-width: auto;
+}
+
+textarea {
+    min-width: 250px;
+    width: 100%;
+    height: 80%;
+    background-image: url(/assets/paper.jpg);
+    grid-column: span 2;
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
 }
 
 #timer {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: span 2;
+    display: grid;
+    min-width: 210px;
+    place-items: center;
 }
 
-#todo {
-    grid-row: 2;
+h1 {
     justify-self: center;
-    max-width: 500px;
+}
+
+#timer-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    
+}
+
+#playlist {
+    grid-row: span 2;
+    
 }
 
 #playlist-placeholder {
     display: block;
     width: 100%;
-    height: 450px;
+    min-height: 75%;
+
     margin-top: 17px;
     border: 0;
 }
 
-#p-timer {
-    display: block;
-    width: 100%;
-    height: 350px;
-    border: 0;
-}
+
 
 #mood-selector {
     display: grid;
@@ -78,20 +110,35 @@ button {
     color: #6b803a;
 }
 
-#playlist-placeholder {
-    margin-top: 17px;
-    display: block;
-    width: 100%;
-    height: 450px;
-    border: 0;
+#numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: stretch;
+    gap: 8px;
 }
 
+#equals {
+    grid-column: span 3;
+}
 
+#calculator {
+    display: grid;
+}
+
+#calc {
+    justify-self: stretch;
+    gap:10px;
+}
+
+#todo {
+    grid-column: span 2;
+}
 
 #tdip{
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 5px;
+    align-self: start;
 }
 
 ul {
@@ -116,6 +163,17 @@ li {
     border-radius: 15px;
 }
 
+#motivation {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-items: center;
+}
+
+.imgsel {
+    height: min-content;
+    width: min-content;
+}
+
 body.clearday {
     background-image: url("/assets/clearday.jpg");
     color: #6b803a;
@@ -129,6 +187,10 @@ button.clearday {
     color:#6b803a;
 }
 
+li.clearday {
+    background-color: #fefbf9;
+}
+
 body.clearevening {
     background-image: url("/assets/clearevening.jpg");
     color: #555032;
@@ -136,6 +198,10 @@ body.clearevening {
 
 body.clearevening .card {
     background-color: #f3bc69cc;
+}
+
+li.clearevening {
+    background-color: #f3bc69;
 }
 
 button.clearevening {
@@ -151,6 +217,11 @@ body.clearnight .card {
     background-color: #2b385ecc;
 }
 
+li.clearnight {
+    background-color: #2b385e;
+}
+
+
 body.cloudday {
     background-image: url("/assets/cloudday.jpg");
     color: #373b32;
@@ -158,6 +229,10 @@ body.cloudday {
 
 body.cloudday .card {
     background-color: #b7b4cdcc;
+}
+
+li.cloudday {
+    background-color: #b7b4cd;
 }
 
 button.cloudday {
@@ -173,6 +248,10 @@ body.cloudevening .card {
     background-color: #8c97b8cc;
 }
 
+li.cloudevening {
+    background-color: #8c97b8;
+}
+
 button.cloudevening {
     color: #2b393b;
 }
@@ -184,6 +263,10 @@ body.cloudnight {
 
 body.cloudnight .card {
     background-color: #848889cc;
+}
+
+li.cloudnight {
+    background-color: #848889;
 }
 
 button.cloudnight {
