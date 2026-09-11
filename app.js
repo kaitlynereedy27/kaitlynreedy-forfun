@@ -4,7 +4,7 @@ async function welcomeToMyHell(){
     let conditionsCH = weatherDataCH.weather[0].main;
 
 
-    if (conditionsCH==='Clear' || weatherDataCH.clouds.all < 50){
+    if (conditionsCH==='Clear' || weatherDataCH.clouds.all < 95){
         simpWeather="clear";
     } else if (conditionsCH==='Rain'|| conditionsCH === 'Thunderstorm'){
         simpWeather="rain";
